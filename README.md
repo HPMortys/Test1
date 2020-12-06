@@ -38,8 +38,7 @@ space between adjacent characters.
    
    ![](https://imgur.com/ouvEJ6Q.png)
    
-   The first step will be creating the an automatic sequence of steps — a OCR pipeline. This pipeline transforms scanned documents  into raw text data with OCR.
-   OCR pipline consists of two parts **Detector and Recogniser** 
+   So the first step will be creating the an automatic sequence of steps — a OCR pipeline, by using keras-ocr. This pipeline transforms scanned documents  into raw text data with OCR. OCR pipline consists of two parts **Detector and Recogniser** 
    
    ![](https://imgur.com/5Qjgffn.png)
    
@@ -57,7 +56,7 @@ space between adjacent characters.
    os.environ["KERAS_OCR_CACHE_DIR"] = 'models'
    ```
    
-   The model has been already trained, so we use it only for inference stage.
+   The model has been already trained, so we use it only for inference stage. At the inference stage, the final output can be delivered in various shapes, such as word boxes or character boxes, and further polygons.
    
    Then we pass the trained model and images to inference function:
    
