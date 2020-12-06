@@ -132,7 +132,11 @@ function parseFiles(files) {
 ```
 
 ## Results 
-   Finally, we get a web aplliction where you can upload your images, and then by using OCR get inages with detected and recognised text
+   Finally, we get a web aplliction where you can upload your images, and then by using OCR get images with detected and recognised text:
+   
+   ![](https://imgur.com/d88EEoq.png)
+   
+   ![](https://imgur.com/EBQ2IH2.png)
    
 ## How to run
 
