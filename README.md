@@ -19,9 +19,9 @@
    ```
    After this command, keras-ocr, tenserflow, opencv(v4.2.0.34), flask will be installed in your environment 
     
-## Project descriptions
+## Project description
 
-   Poject use **keras-ocr, tenserflow, opencv** for creating OCR model and **flask** for creating web-application.
+   The project use **keras-ocr, tenserflow, opencv** for creating OCR model and **flask** for creating web-application.
 
 ### OCR 
 
@@ -130,6 +130,7 @@ function parseFiles(files) {
   }
 }
 ```
+
 ## Results 
    Finally, we get a web aplliction where you can upload your images, and then by using OCR get inages with detected and recognised text
    
