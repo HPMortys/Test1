@@ -24,7 +24,9 @@
    The project use **keras-ocr, tenserflow, opencv** for creating OCR model and **flask** for creating web-application. So let's talk about this libraries and framework.
    
    **Keras** is an open-source library that provides a Python interface for artificial neural networks. Keras acts as an interface for the TensorFlow library.Keras contains   numerous implementations of commonly used neural-network building blocks such as layers, objectives, activation functions, optimizers, and a host of tools to make working with image and text data easier to simplify the coding necessary for writing deep neural network code.
+   
    **TenserFlow** is a free and open-source software library for machine learning. It can be used across a range of tasks but has a particular focus on training and inference of deep neural networks.
+   
    **OpenCV** or Open Source Computer Vision Library is a library of programming functions mainly aimed at real-time computer vision.
 
 ### OCR 
