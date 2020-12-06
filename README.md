@@ -33,12 +33,13 @@ geo-location, and blind-navigation.
 
 ### Optical Character Recognition (OCR) 
 
-   Optical Character Recognition (OCR) is used to process images or scanned documents to produce raw text or other structured output. The major trend in scene text detection before the emergence of deep learning was bottom-up, where handcrafted features were mostly used but recently, deep learningbased text detectors have been proposed by adopting popular object detection/segmentation methods. For each training image, we generate the ground truth label for the region score and the affinity score with characterlevel bounding boxes.The region score represents the probability that the given pixel is the center of the character,and the affinity score represents the center probability of the
-space between adjacent characters.
+   Optical Character Recognition (OCR) is used to process images or scanned documents to produce raw text or other structured output. Before character recognition of the image with the images, it is advisable to extract the words and lines of text. The major trend in scene text detection before the emergence of deep learning was bottom-up, where handcrafted features were mostly used, but recently, deep learningbased text detectors have been proposed by adopting popular object detection/segmentation methods. So by using detector we generate for each training image the ground truth label  with characterlevel limited boxes.In this way, the source data is compressed, and images containing the words and lines are extracted from text.
+   
+   The next step is character recognition. The recognition in images is most successfully performed on the basis of deep machine learning. 
    
    ![](https://imgur.com/ouvEJ6Q.png)
    
-   So the first step will be creating the an automatic sequence of steps — a OCR pipeline, by using keras-ocr. This pipeline transforms scanned documents  into raw text data with OCR. OCR pipline consists of two parts **Detector and Recogniser** 
+   So the first step will be creating a OCR pipeline, by using keras-ocr. This pipeline transforms images into raw text data with OCR. OCR pipline consists of two parts **Detector and Recogniser** 
    
    ![](https://imgur.com/5Qjgffn.png)
    
