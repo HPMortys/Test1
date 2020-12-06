@@ -25,7 +25,7 @@ geo-location, and blind-navigation.
 
    The project use **keras-ocr, tenserflow, opencv** for creating OCR model and **flask** for creating web-application. So let's talk about this libraries and framework.
    
-   **Keras** is an open-source library that provides a Python interface for artificial neural networks. Keras acts as an interface for the TensorFlow library.Keras contains   numerous implementations of commonly used neural-network building blocks such as layers, objectives, activation functions, optimizers, and a host of tools to make working with image and text data easier to simplify the coding necessary for writing deep neural network code.
+   **Keras** is an open-source library that provides a Python interface for artificial neural networks. Keras acts as an interface for the TensorFlow library. Keras contains   numerous implementations of commonly used neural-network building blocks such as layers, objectives, activation functions, optimizers, and a host of tools to make working with image and text data easier to simplify the coding necessary for writing deep neural network code.
    
    **TenserFlow** is a free and open-source software library for machine learning. It can be used across a range of tasks but has a particular focus on training and inference of deep neural networks.
    
@@ -33,7 +33,10 @@ geo-location, and blind-navigation.
 
 ### OCR 
 
-   Optical Character Recognition (OCR) is used to process images or scanned documents to produce raw text or other structured output.
+   Optical Character Recognition (OCR) is used to process images or scanned documents to produce raw text or other structured output. The major trend in scene text detection before the emergence of deep learning was bottom-up, where handcrafted features were mostly used but recently, deep learningbased text detectors have been proposed by adopting popular object detection/segmentation methods.
+   
+   ![](https://imgur.com/ouvEJ6Q.png)
+   
    The first step will be creating the an automatic sequence of steps — a OCR pipeline. This pipeline transforms scanned documents  into raw text data with OCR.
    OCR pipline consists of two parts **Detector and Recogniser** 
    
