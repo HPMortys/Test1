@@ -3,7 +3,7 @@
 ## Intoduction 
 
    Optical character recognition or optical character reader (OCR) is the  conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document, a scene-photo (for example the text on signs and billboards in a landscape photo) or from subtitle text superimposed on an image. 
-   In this Project 
+
 
 ## Getting Started
 1. Install all following requirements from requirements.txt:
@@ -48,11 +48,15 @@
     
 ## Project descriptions
    Poject use **keras-ocr, tenserflow, opencv** for creating OCR model and **flask** for creating web-application.
-   Keras-ocr 
-   ### OCR 
+
+### OCR 
+   Keras is an open-source library that provides a Python interface for artificial neural networks. Keras acts as an interface for the TensorFlow library.
    OCR consists of two parts **Detector and Recogniser** 
    ```
    ```
+## Examples  
+  ![Diagram]https://drive.google.com/file/d/1NWbTAZ_19baBtobN54d9zAhccVCsFny0/view?usp=sharing
+ 
 ## 
 ## Authors
 
