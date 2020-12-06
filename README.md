@@ -47,12 +47,13 @@
    ```
     
 ## Project descriptions
-   Poject use keras-ocr, tenserflow, opencv for creating OCR model and flask for creatoing web-application.
+   Poject use **keras-ocr, tenserflow, opencv** for creating OCR model and **flask** for creating web-application.
    Keras-ocr 
    ### OCR 
    OCR consists of two parts **Detector and Recogniser** 
    ```
    ```
+## 
 ## Authors
 
 * **Bolotov Heorgii** - *Initial work* - [BeefMILF](https://github.com/BeefMILF)
