@@ -31,9 +31,10 @@ geo-location, and blind-navigation.
    
    **OpenCV** or Open Source Computer Vision Library is a library of programming functions mainly aimed at real-time computer vision.
 
-### OCR 
+### Optical Character Recognition (OCR) 
 
-   Optical Character Recognition (OCR) is used to process images or scanned documents to produce raw text or other structured output. The major trend in scene text detection before the emergence of deep learning was bottom-up, where handcrafted features were mostly used but recently, deep learningbased text detectors have been proposed by adopting popular object detection/segmentation methods.
+   Optical Character Recognition (OCR) is used to process images or scanned documents to produce raw text or other structured output. The major trend in scene text detection before the emergence of deep learning was bottom-up, where handcrafted features were mostly used but recently, deep learningbased text detectors have been proposed by adopting popular object detection/segmentation methods. For each training image, we generate the ground truth label for the region score and the affinity score with characterlevel bounding boxes.The region score represents the probability that the given pixel is the center of the character,and the affinity score represents the center probability of the
+space between adjacent characters.
    
    ![](https://imgur.com/ouvEJ6Q.png)
    
