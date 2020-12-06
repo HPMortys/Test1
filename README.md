@@ -54,13 +54,13 @@
    
    ![](https://imgur.com/5Qjgffn.png)
    
-   Create a an object of class, weights of model models/craft_mlt_25k.h5 & models/crnn_kurapan.h5 are downloaded by url (in the      keras-ocr code) are cached in parent folder ~/models.
+   Then let's create a an object of class. Weights of model models/craft_mlt_25k.h5 & models/crnn_kurapan.h5 are downloaded by url (in the keras-ocr code) and cached in parent folder ~/models.
    ```
    # keras-ocr will automatically download pretrained
    # weights for the detector and recognizer.
    pipeline = keras_ocr.pipeline.Pipeline()
    ```
-   To cache inside the project, set var:
+   To cache inside the project, set the following variable:
    ```
    os.environ["KERAS_OCR_CACHE_DIR"] = 'models'
    ```
