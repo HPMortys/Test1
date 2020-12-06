@@ -6,48 +6,25 @@
 
 
 ## Getting Started
-1. Install all following requirements from requirements.txt:
-   ```bash
+
+1. Clone our repository:  
+   ```
+   # Clone git repo
+   git clone {} 
+   ``` 
+2. Install all following requirements from requirements.txt:
+   ```
    #With pip
    pip install -r requirements.txt
    ```
    After this command, keras-ocr, tenserflow, opencv(v4.2.0.34), flask will be installed in your environment 
     
-2. Then clone our repository:  
-   ```bash
-   # Clone git repo
-   git clone {} 
-   ```
-3. To run project, execute following commands in terminal:
-
-   Step 1: Open the server with 
-   ```
-   python app.py
-   ```
-   The server is setup on port 5000.
-
-   Step 2: Open the front end page.
-
-   If you want to use python.
-   ```
-   // python3
-   python -m http.server
-   // python2
-   python -m SimpleHTTPServer
-   ```
-   If you prefer Node.js
-   ```
-   npm install serve -g // install serve
-   serve // this will open a mini web serve
-   // or http-serve
-   npm install http-server -g
-   http-server
-   ```
-    
 ## Project descriptions
+
    Poject use **keras-ocr, tenserflow, opencv** for creating OCR model and **flask** for creating web-application.
 
 ### OCR 
+
    Optical Character Recognition (OCR) is used to process images or scanned documents to produce raw text or other structured output.
    The first step will be creating the an automatic sequence of steps — a OCR pipeline. This pipeline transforms scanned documents  into raw text data with OCR.
    OCR pipline consists of two parts **Detector and Recogniser** 
@@ -55,6 +32,7 @@
    ![](https://imgur.com/5Qjgffn.png)
    
    Then let's create a an object of class. Weights of model models/craft_mlt_25k.h5 & models/crnn_kurapan.h5 will be downloaded by url (in the keras-ocr code) and cached in parent folder ~/models.
+   
    ```
    # keras-ocr will automatically download pretrained
    # weights for the detector and recognizer.
@@ -62,12 +40,15 @@
    ```
    
    To cache inside the project, set the following variable:
+   
    ```
    os.environ["KERAS_OCR_CACHE_DIR"] = 'models'
    ```
    
    The model has been already trained, so we use it only for inference stage.
+   
    Then we pass the trained model and images to inference function:
+   
    ```
    def inference(pipeline, images: List[Image.Image]) -> List[Dict]:
     if not isinstance(images, list):
@@ -125,6 +106,7 @@ def main_interface():
 ```
 
 ### Front end part
+
 In front end page, with the help of  jQuery ajax, we can send the base64 image to backend, wait for the result, then draw the bounding box on the page.
 
 Core code is:
@@ -151,15 +133,44 @@ function parseFiles(files) {
 ## Results 
    Finally, we get a web aplliction where you can upload your images, and then by using OCR get inages with detected and recognised text
    
+## How to run
+
+   To run project, execute following commands in terminal:
+
+   Step 1: Open the server with 
+   ```
+   python app.py
+   ```
+   The server is setup on port 5000.
+
+   Step 2: Open the front end page.
+
+   If you want to use python.
+   ```
+   // python3
+   python -m http.server
+   // python2
+   python -m SimpleHTTPServer
+   ```
+   If you prefer Node.js
+   ```
+   npm install serve -g // install serve
+   serve // this will open a mini web serve
+   // or http-serve
+   npm install http-server -g
+   http-server
+   ```
    
 ## More examples  
+
   ![](https://imgur.com/tLlfk1I.png)
   
   ![](https://imgur.com/LN41ooq.png)
   
   ![](https://imgur.com/KbxPIvr.png)
  
-## 
+
+
 ## Authors
 
 * **Bolotov Heorgii** - *Initial work* - [BeefMILF](https://github.com/BeefMILF)
