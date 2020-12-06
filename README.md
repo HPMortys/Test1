@@ -54,7 +54,7 @@
    
    ![](https://imgur.com/5Qjgffn.png)
    
-   Then let's create a an object of class. Weights of model models/craft_mlt_25k.h5 & models/crnn_kurapan.h5 are downloaded by url (in the keras-ocr code) and cached in parent folder ~/models.
+   Then let's create a an object of class. Weights of model models/craft_mlt_25k.h5 & models/crnn_kurapan.h5 will be downloaded by url (in the keras-ocr code) and cached in parent folder ~/models.
    ```
    # keras-ocr will automatically download pretrained
    # weights for the detector and recognizer.
