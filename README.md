@@ -48,10 +48,49 @@
    Poject use **keras-ocr, tenserflow, opencv** for creating OCR model and **flask** for creating web-application.
 
 ### OCR 
-  Optical Character Recognition (OCR) is used to process images or scanned documents to produce raw text or other structured output.
-  The first step will be creating the an automatic sequence of steps — a OCR pipeline. This pipeline transforms scanned documents into raw text data with OCR.
-  OCR pipline consists of two parts **Detector and Recogniser** 
-  ![](https://imgur.com/5Qjgffn.png)
+   Optical Character Recognition (OCR) is used to process images or scanned documents to produce raw text or other structured output.
+   The first step will be creating the an automatic sequence of steps — a OCR pipeline. This pipeline transforms scanned documents  into raw text data with OCR.
+   OCR pipline consists of two parts **Detector and Recogniser** 
+   
+   ![](https://imgur.com/5Qjgffn.png)
+   
+   Create a an object of class, weights of model models/craft_mlt_25k.h5 & models/crnn_kurapan.h5 are downloaded by url (in the      keras-ocr code) are cached in parent folder ~/models.
+   ```
+   # keras-ocr will automatically download pretrained
+   # weights for the detector and recognizer.
+   pipeline = keras_ocr.pipeline.Pipeline()
+   ```
+   To cache inside the project, set var:
+   ```
+   os.environ["KERAS_OCR_CACHE_DIR"] = 'models'
+   ```
+   The model has been already trained, so we use it only for inference stage.
+   Then we pass the trained model and images to inference function:
+   ```
+   def inference(pipeline, images: List[Image.Image]) -> List[Dict]:
+    if not isinstance(images, list):
+        # pack in list if single image
+        images = [images]
+
+    for i, image in enumerate(images):
+        # convert to numpy array.
+        if isinstance(image, Image.Image):
+            images[i] = np.array(image)
+
+    # # Each list of predictions in prediction_groups is a list of
+    # # (word, box) tuples.
+    prediction_groups = pipeline.recognize(images)
+    results = []
+    for image, prediction in zip(images, prediction_groups):
+        result = []
+        for data in prediction:
+            result.append({
+                'name': str(data[0]),
+                'bbox': data[1].astype(int).tolist()
+            })
+        results.append(result)
+    return results
+   ```
 ### Server part
 
 Since flask is very simple and wroted by python, we build it with only a few lines of code.
