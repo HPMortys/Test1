@@ -16,7 +16,7 @@ geo-location, and blind-navigation.
    ``` 
 2. Install all following requirements from requirements.txt:
    ```
-   #With pip
+   # With pip
    pip install -r requirements.txt
    ```
    After this command, keras-ocr, tenserflow, opencv(v4.2.0.34), flask will be installed in your environment 
