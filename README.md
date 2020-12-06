@@ -55,7 +55,7 @@
    ```
    ```
 ## Examples  
-  ![Registration](https://imgur.com/a/KvOWfYW.png)
+  ![Registration](https://imgur.com/tLlfk1I.png)
  
 ## 
 ## Authors
