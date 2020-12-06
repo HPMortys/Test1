@@ -1,5 +1,5 @@
 # Optical Character Recognition model using Keras, TenserFlow, OpenCV
-(https://www.pyimagesearch.com/wp-content/uploads/2020/08/ocr_handwriting_reco_header.png)
+![Diagram](https://www.pyimagesearch.com/wp-content/uploads/2020/08/ocr_handwriting_reco_header.png)
 ## Intoduction 
 
    Optical character recognition or optical character reader (OCR) is the  conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document, a scene-photo (for example the text on signs and billboards in a landscape photo) or from subtitle text superimposed on an image. 
