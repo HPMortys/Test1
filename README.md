@@ -1,4 +1,4 @@
-# Optical Character Recognition model using Keras, TenserFlow, OpenCV
+# Optical Character Recognition
 ![Diagram](https://www.pyimagesearch.com/wp-content/uploads/2020/08/ocr_handwriting_reco_header.png)
 ## Intoduction 
 
@@ -48,8 +48,9 @@
    Poject use **keras-ocr, tenserflow, opencv** for creating OCR model and **flask** for creating web-application.
 
 ### OCR 
-   Keras is an open-source library that provides a Python interface for artificial neural networks. Keras acts as an interface for the TensorFlow library.
-   OCR pipline consists of two parts **Detector and Recogniser** 
+  Optical Character Recognition (OCR) is used to process images or scanned documents to produce raw text or other structured output.
+  The first step will be creating the an automatic sequence of steps — a OCR pipeline. This pipeline transforms scanned documents into raw text data with OCR.
+  OCR pipline consists of two parts **Detector and Recogniser** 
    ```
    ```
 ### Server part
@@ -106,7 +107,10 @@ function parseFiles(files) {
   }
 }
 ```
-
+## Results 
+   Finally, we get a web aplliction where you can upload your images, and then by using OCR get inages with detected and recognised text
+   
+   
 ## More examples  
   ![](https://imgur.com/tLlfk1I.png)
   
