@@ -51,8 +51,7 @@
   Optical Character Recognition (OCR) is used to process images or scanned documents to produce raw text or other structured output.
   The first step will be creating the an automatic sequence of steps — a OCR pipeline. This pipeline transforms scanned documents into raw text data with OCR.
   OCR pipline consists of two parts **Detector and Recogniser** 
-   ```
-   ```
+  ![](https://imgur.com/5Qjgffn.png)
 ### Server part
 
 Since flask is very simple and wroted by python, we build it with only a few lines of code.
