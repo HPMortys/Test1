@@ -46,5 +46,25 @@
    http-server
    ```
     
-## Description
+## Project descriptions
+   Poject use keras-ocr, tenserflow, opencv for creating OCR model and flask for creatoing web-application.
+   Keras-ocr 
+   ### OCR 
+   OCR consists of two parts **Detector and Recogniser** 
+   ```
+   ```
+## Authors
+
+* **Bolotov Heorgii** - *Initial work* - [BeefMILF](https://github.com/BeefMILF)
+* **Moroz Denis** - *Initial work* - [HPMortys](https://github.com/HPMortys)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/BeefMILF/OCR-KPI-PetProject/blob/master/LICENSE) file for details
+
+## References
+
+
+
+
    
