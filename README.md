@@ -3,7 +3,7 @@
 ## Intoduction 
 
    Optical character recognition or optical character reader (OCR) is the  conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document, a scene-photo (for example the text on signs and billboards in a landscape photo) or from subtitle text superimposed on an image. 
-
+   The aim of this project is creating the web application, where user can upload theirs images, and get images with detected and recognised text.
 
 ## Getting Started
 
@@ -21,7 +21,11 @@
     
 ## Project description
 
-   The project use **keras-ocr, tenserflow, opencv** for creating OCR model and **flask** for creating web-application.
+   The project use **keras-ocr, tenserflow, opencv** for creating OCR model and **flask** for creating web-application. So let's talk about this libraries and framework.
+   
+   **Keras** is an open-source library that provides a Python interface for artificial neural networks. Keras acts as an interface for the TensorFlow library.Keras contains   numerous implementations of commonly used neural-network building blocks such as layers, objectives, activation functions, optimizers, and a host of tools to make working with image and text data easier to simplify the coding necessary for writing deep neural network code.
+   **TenserFlow** is a free and open-source software library for machine learning. It can be used across a range of tasks but has a particular focus on training and inference of deep neural networks.
+   **OpenCV** or Open Source Computer Vision Library is a library of programming functions mainly aimed at real-time computer vision.
 
 ### OCR 
 
@@ -186,6 +190,11 @@ function parseFiles(files) {
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/BeefMILF/OCR-KPI-PetProject/blob/master/LICENSE) file for details
 
 ## References
+
+1.  "Keras-ocr" [repo](https://github.com/faustomorales/keras-ocr): https://github.com/faustomorales/keras-ocr
+
+2. "Flask" [repo](https://github.com/pallets/flask): https://github.com/pallets/flask
+
 
 
 
