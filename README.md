@@ -11,7 +11,7 @@
    #With pip
    pip install -r requirements.txt
    ```
-   After this command, keras-ocr, tenserflow, opencv(v4.2.0.34) will be installed in your environment 
+   After this command, keras-ocr, tenserflow, opencv(v4.2.0.34), flask will be installed in your environment 
     
 2. Then clone our repository:  
    ```bash
