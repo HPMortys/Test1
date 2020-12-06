@@ -60,10 +60,12 @@
    # weights for the detector and recognizer.
    pipeline = keras_ocr.pipeline.Pipeline()
    ```
+   
    To cache inside the project, set the following variable:
    ```
    os.environ["KERAS_OCR_CACHE_DIR"] = 'models'
    ```
+   
    The model has been already trained, so we use it only for inference stage.
    Then we pass the trained model and images to inference function:
    ```
@@ -91,6 +93,7 @@
         results.append(result)
     return results
    ```
+   
 ### Server part
 
 Since flask is very simple and wroted by python, we build it with only a few lines of code.
