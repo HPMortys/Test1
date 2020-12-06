@@ -19,6 +19,7 @@
    git clone {} 
    ```
 3. To run project, execute following commands in terminal:
+
    Step 1: Open the server with 
    ```
    python app.py
