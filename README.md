@@ -1,4 +1,5 @@
-# Optical Character Recognition model using Keras, TenserFlow, OpenCV
+# Optical Character Recognition model 
+# using Keras, TenserFlow, OpenCV
 ![Diagram](https://www.pyimagesearch.com/wp-content/uploads/2020/08/ocr_handwriting_reco_header.png)
 ## Intoduction 
 
