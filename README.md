@@ -2,8 +2,10 @@
 ![Diagram](https://www.pyimagesearch.com/wp-content/uploads/2020/08/ocr_handwriting_reco_header.png)
 ## Intoduction 
 
-   Optical character recognition or optical character reader (OCR) is the  conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document, a scene-photo (for example the text on signs and billboards in a landscape photo) or from subtitle text superimposed on an image. 
-   The aim of this project is creating the web application, where user can upload theirs images, and get images with detected and recognised text.
+   Optical character recognition or optical character reader (OCR) is the  conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document, a scene-photo (for example the text on signs and billboards in a landscape photo) or from subtitle text superimposed on an image. Scene text detection has attracted much attention in the computer vision field because of its numerous applications, such as instant translation, image retrieval, scene parsing,
+geo-location, and blind-navigation.  
+
+   So the aim of this project is creating OCR and the web application, where user can upload theirs images, and get images with detected and recognised text by using OCR.
 
 ## Getting Started
 
