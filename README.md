@@ -54,7 +54,7 @@
    OCR consists of two parts **Detector and Recogniser** 
    ```
    ```
-## Examples  
+## More examples  
   ![](https://imgur.com/tLlfk1I.png)
   
   ![](https://imgur.com/LN41ooq.png)
